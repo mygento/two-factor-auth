@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @author Mygento Team
+ * @copyright 2021 Mygento (https://www.mygento.ru)
+ * @package Mygento_TwoFactorAuth
+ */
+
 namespace Mygento\TwoFactorAuth\Plugin;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
@@ -23,6 +29,10 @@ class BypassTwoFactorAuthForApiTokenGeneration
      */
     private $scopeConfig;
 
+    /**
+     * @param \Magento\Integration\Api\AdminTokenServiceInterface $adminTokenService
+     * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
+     */
     public function __construct(
         AdminTokenServiceInterface $adminTokenService,
         ScopeConfigInterface $scopeConfig
@@ -40,6 +50,7 @@ class BypassTwoFactorAuthForApiTokenGeneration
      * @throws InputException
      * @throws LocalizedException
      * @return string
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function aroundCreateAdminAccessToken(AdminAccessTokenService $subject, \Closure $proceed, $username, $password): string
     {

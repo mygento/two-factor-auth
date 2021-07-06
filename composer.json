@@ -14,6 +14,9 @@
     "require": {
         "magento/module-two-factor-auth": "~1.1.0"
     },
+    "require-dev": {
+        "mygento/coding-standard": "~2.14.0-beta4"
+    },
     "autoload": {
         "files": [
             "registration.php"
