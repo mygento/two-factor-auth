@@ -1,0 +1,7 @@
+/vendor
+.DS_Store
+.php_cs.dist
+.php_cs.cache
+/nbproject
+/.idea
+/.gitattributes
