@@ -7,7 +7,7 @@ use Magento\TwoFactorAuth\Model\TfaSession;
 
 class BypassTwoFactorAuth
 {
-    public const XML_PATH_CONFIG_ENABLED = 'twofactorauth/general/enabled';
+    private const XML_PATH_CONFIG_ENABLED = 'twofactorauth/general/enabled';
 
     /**
      * @var ScopeConfigInterface

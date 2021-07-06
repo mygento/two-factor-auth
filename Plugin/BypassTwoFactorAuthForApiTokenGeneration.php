@@ -11,7 +11,7 @@ use Magento\TwoFactorAuth\Model\AdminAccessTokenService;
 
 class BypassTwoFactorAuthForApiTokenGeneration
 {
-    public const XML_PATH_CONFIG_ENABLED_FOR_API_TOKEN_GENERATION = 'twofactorauth/general/enabled_for_api_token_generation';
+    private const XML_PATH_CONFIG_ENABLED_FOR_API_TOKEN_GENERATION = 'twofactorauth/general/enabled_for_api_token_generation';
 
     /**
      * @var AdminTokenServiceInterface
