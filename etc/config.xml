@@ -4,8 +4,8 @@
     <default>
         <twofactorauth>
             <general>
-                <enabled>0</enabled>
-                <enabled_for_api_token_generation>0</enabled_for_api_token_generation>
+                <enabled>1</enabled>
+                <enabled_for_api_token_generation>1</enabled_for_api_token_generation>
             </general>
         </twofactorauth>
     </default>
