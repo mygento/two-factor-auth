@@ -34,7 +34,7 @@ jobs:
           # key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
-      - run: composer self-update --1
+      - run: composer self-update --2
       - run: echo "{\"http-basic\":{\"repo.magento.com\":{\"username\":\"${MAGE_LOGIN}\",\"password\":\"${MAGE_PWD}\"}}}" > auth.json
         env:
           MAGE_LOGIN: ${{ secrets.MAGE_LOGIN }}
