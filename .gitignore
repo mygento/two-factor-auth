@@ -4,4 +4,5 @@
 .php_cs.cache
 /nbproject
 /.idea
-/.gitattributes
+.php-cs-fixer.cache
+/composer.lock

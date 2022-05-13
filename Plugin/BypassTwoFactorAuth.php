@@ -34,6 +34,7 @@ class BypassTwoFactorAuth
      * @param $result
      * @return bool
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     * @phpstan-ignore-next-line
      */
     public function afterIsGranted(TfaSession $subject, $result): bool
     {

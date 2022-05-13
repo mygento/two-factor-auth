@@ -51,6 +51,7 @@ class BypassTwoFactorAuthForApiTokenGeneration
      * @throws LocalizedException
      * @return string
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     * @phpstan-ignore-next-line
      */
     public function aroundCreateAdminAccessToken(AdminAccessTokenService $subject, \Closure $proceed, $username, $password): string
     {
